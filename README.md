@@ -8,7 +8,7 @@ Put stuff here that you use so others can use it as well.
 1. Start a screen session: `$ screen -S <your name here>` and activate the environment you'll be working in: `$ source activate <environment name>`.
 2. Start jupyter: `$ jupyter notebook --no-browser --port <port number>`. The port number is a 4 or 5 digit number, pick one that someone else isn't using.
 3. The jupyter process will give you a login key. We'll use that in a bit.
-4. On your local machine, open an ssh tunnel to the remote machine: `$ ssh -N -f -L localhost:<port number>:localhost:<port number> username@host` where `<port number` is the number you chose in Step 2 and `username@host` is how you connect to the remote machine.
+4. On your local machine, open an ssh tunnel to the remote machine: `$ ssh -N -f -L localhost:<port number>:localhost:<port number> username@host` where `<port number>` is the number you chose in Step 2 and `username@host` is how you connect to the remote machine.
 5. Open a browser on your local machine and point it to `localhost:<port number>`. This brings you to the jupyter login screen. It should be asking for a login key
 6. Grab the login key that jupyter gave you in Step 3.
 7. You should now have access to your jupyter running on the remote machine. Voila!
